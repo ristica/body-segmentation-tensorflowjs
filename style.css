@@ -1,0 +1,47 @@
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: #212121;
+    color: #ddd;
+    font-family: 'Segoe UI';
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+#container {
+    position: relative;
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#canvas {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 640px;
+    height: 480px;
+    text-align: center;
+}
+
+#video {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 640px;
+    height: 480px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgb(141, 141, 141);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body segmentation - TensorflowJS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">  
+</head>
+<body>
+
+    <div id="container">
+        <video id="video" width="640" height="480"></video>
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+
+    <!-- tensorflow -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+
+    <!-- body library -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-segmentation"></script>
+
+    <!-- main -->
+    <script src="constants.js"></script>
+    <script src="webcam.js"></script>
+    <script type="module" src="script.js"></script>
+    
+</body>
+</html>
